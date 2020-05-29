@@ -7,7 +7,6 @@ import { userActions } from '../action/index';
 import * as userService from '../service/user-service';
 
 function* getUsers(action) {
-    console.log("call")
     try {
         yield put(userActions.getUsersLoading());
         const userResponse = yield call(userService.getUsers, action.payload);

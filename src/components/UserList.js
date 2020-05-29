@@ -14,7 +14,6 @@ const UserList = () => {
 
     },[]);
     useEffect(()=>{
-        console.log("u",_userState.usersList)
         setUsers(_userState.usersList)
 
     },[_userState.usersList,_userState.loading,_userState.usersError])

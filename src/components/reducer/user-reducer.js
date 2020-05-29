@@ -7,7 +7,6 @@ const _state = {
 
 
 const dayReducer = (state = _state, action) => {
-    console.log("res",action)
     switch (action.type) {
         case "GET_USERS_REQUEST":
             return {...state, loading: false};
